@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ёлки - Новогодний магазин в Казахстане</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="visibility: hidden; position: absolute; width: 0; height: 0;">
+        <symbol id="icon-basket" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M27.7124 23.2806C25.306 23.2806 23.3483 25.2364 23.3483 27.6403C23.3483 30.0442 25.306 32 27.7124 32C30.1187 32 32.0764 30.0442 32.0764 27.6403C32.0764 25.2364 30.1187 23.2806 27.7124 23.2806ZM27.7124 29.3842C26.7496 29.3842 25.9667 28.6021 25.9667 27.6403C25.9667 26.6786 26.7496 25.8964 27.7124 25.8964C28.6751 25.8964 29.458 26.6786 29.458 27.6403C29.458 28.6021 28.6751 29.3842 27.7124 29.3842Z" />
+            <path
+                d="M34.7218 6.43093C34.4739 6.11399 34.0938 5.92913 33.691 5.92913H8.08149L6.90318 1.00401C6.76222 0.41548 6.23544 5.97303e-09 5.6297 5.97303e-09H1.30923C0.586117 -6.82847e-05 0 0.585456 0 1.30783C0 2.03021 0.586117 2.61574 1.30923 2.61574H4.59631L8.85129 20.4016C8.99225 20.9906 9.51903 21.4056 10.1248 21.4056H30.5052C31.1071 21.4056 31.6316 20.9958 31.776 20.4124L34.9619 7.55131C35.0583 7.16075 34.9697 6.74787 34.7218 6.43093ZM29.4809 18.7898H11.1582L8.70726 8.54493H32.0182L29.4809 18.7898Z" />
+            <path
+                d="M11.8706 23.2806C9.46416 23.2806 7.50647 25.2364 7.50647 27.6403C7.50647 30.0442 9.46423 32 11.8706 32C14.2769 32 16.2346 30.0442 16.2346 27.6403C16.2346 25.2364 14.2769 23.2806 11.8706 23.2806ZM11.8706 29.3842C10.9078 29.3842 10.1249 28.6021 10.1249 27.6403C10.1249 26.6786 10.9078 25.8964 11.8706 25.8964C12.8333 25.8964 13.6162 26.6786 13.6162 27.6403C13.6162 28.6021 12.8333 29.3842 11.8706 29.3842Z" />
+        </symbol>
+        <symbol id="icon-city-pin" viewBox="0 0 18 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9 0C4.06505 0 0.0502586 4.01641 0.0502586 8.9533C0.0502586 16.3089 8.10917 23.4911 8.45236 23.7933C8.6088 23.9311 8.80436 24.0001 9 24.0001C9.19563 24.0001 9.39119 23.9312 9.54771 23.7933C9.89074 23.4912 17.9497 16.309 17.9497 8.9533C17.9497 4.01641 13.9349 0 9 0ZM9 22.0355C7.21826 20.309 1.70763 14.518 1.70763 8.9533C1.70763 4.93035 4.97899 1.65738 9 1.65738C13.021 1.65738 16.2924 4.93035 16.2924 8.9533C16.2924 14.5179 10.7817 20.3089 9 22.0355Z" />
+            <path
+                d="M8.99999 4.78247C6.7153 4.78247 4.85664 6.6535 4.85664 8.95329C4.85664 11.2532 6.7153 13.1241 8.99999 13.1241C11.2847 13.1241 13.1433 11.2532 13.1433 8.95329C13.1433 6.6535 11.2847 4.78247 8.99999 4.78247ZM8.99999 11.4667C7.62916 11.4667 6.51393 10.3392 6.51393 8.95329C6.51393 7.56744 7.62916 6.43984 8.99999 6.43984C10.3708 6.43984 11.486 7.56735 11.486 8.95329C11.486 10.3392 10.3708 11.4667 8.99999 11.4667Z" />
+        </symbol>
+        <symbol id="icon-phone-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M11.0371 7.8766C10.3024 7.8766 9.58104 7.7617 8.89745 7.53579C8.55663 7.41957 8.1686 7.50976 7.94626 7.73632L6.59698 8.75488C5.03221 7.9196 4.06833 6.95604 3.24446 5.40302L4.23305 4.0889C4.48989 3.8324 4.58202 3.45771 4.47164 3.10615C4.24477 2.41896 4.12952 1.69793 4.12952 0.962935C4.12955 0.431968 3.69758 0 3.16665 0H0.962873C0.431968 0 0 0.431968 0 0.962873C0 7.04883 4.95117 12 11.0371 12C11.568 12 12 11.568 12 11.0371V8.83948C12 8.30857 11.568 7.8766 11.0371 7.8766ZM11.3333 11.0371C11.3333 11.2005 11.2005 11.3333 11.0371 11.3333C5.31867 11.3333 0.666686 6.68129 0.666686 0.962904C0.666686 0.799498 0.799498 0.666686 0.962904 0.666686H3.16668C3.33009 0.666686 3.4629 0.799498 3.4629 0.962904C3.4629 1.76921 3.58952 2.56056 3.83724 3.31024C3.87174 3.42093 3.84374 3.53549 3.73177 3.65205L2.58593 5.16958C2.50912 5.27145 2.49706 5.40786 2.55468 5.52145C3.4899 7.35967 4.6263 8.49607 6.47751 9.44463C6.59014 9.50354 6.72817 9.49119 6.83039 9.41404L8.38279 8.23795C8.46123 8.15951 8.57876 8.13151 8.68488 8.16763C9.43976 8.41698 10.2311 8.54329 11.0371 8.54329C11.2005 8.54329 11.3333 8.6761 11.3333 8.83951V11.0371Z" />
+        </symbol>
+        <symbol id="icon-phone-2" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.7274 2.6026C12.2618 1.10313 10.3137 0.277466 8.24097 0.277466C8.24085 0.277466 8.24036 0.277466 8.24024 0.277466C7.21509 0.277591 6.21607 0.480667 5.27112 0.881198C4.32605 1.28173 3.47937 1.86086 2.7544 2.6026C1.28894 4.10194 0.481935 6.09548 0.481935 8.21591C0.481935 9.48045 0.780153 10.7371 1.34522 11.8568L0.0410175 15.6688C-0.0509015 15.9377 0.014162 16.2299 0.211183 16.4314C0.349001 16.5725 0.530397 16.6474 0.716921 16.6474C0.796877 16.6474 0.877687 16.6337 0.956545 16.6055L4.68237 15.2712C5.77673 15.8494 7.00501 16.1545 8.24097 16.1545C10.3135 16.1545 12.2618 15.3287 13.7274 13.8293C15.1929 12.33 16 10.3365 16 8.21603C16 6.09548 15.193 4.10194 13.7274 2.6026ZM13.0638 13.1504C11.7756 14.4685 10.0627 15.1943 8.24097 15.1943C7.12647 15.1943 6.01929 14.9123 5.03906 14.3785C4.86133 14.2818 4.65125 14.2652 4.46265 14.3328L1.07764 15.5449L2.26245 12.0816C2.32849 11.8884 2.31214 11.6734 2.21765 11.4917C1.69605 10.4891 1.42029 9.3563 1.42029 8.21591C1.42029 6.35201 2.12976 4.59951 3.41797 3.28151C4.70606 1.96364 6.4187 1.23777 8.24036 1.23752H8.24097C10.0629 1.23752 11.7756 1.96339 13.0638 3.28151C14.3522 4.59951 15.0616 6.35188 15.0616 8.21591C15.0616 10.0799 14.3522 11.8324 13.0638 13.1504Z" />
+            <path
+                d="M11.1245 8.92511C10.7676 8.55992 10.1868 8.55992 9.82983 8.92511L9.43945 9.32451C8.47009 8.7841 7.68567 7.98154 7.15735 6.98977L7.54773 6.59036C7.90479 6.22517 7.90479 5.63093 7.54773 5.26574L6.49573 4.18942C6.1388 3.82423 5.55799 3.82423 5.20105 4.18942L4.3595 5.05043C3.87745 5.54363 3.8534 6.39153 4.29175 7.43801C4.67237 8.3466 5.3689 9.34525 6.25305 10.2498C7.13721 11.1544 8.11328 11.8671 9.00134 12.2565C9.48731 12.4696 9.92932 12.5759 10.3113 12.5759C10.7333 12.5759 11.0819 12.4461 11.335 12.1872L12.1765 11.326V11.3262C12.3495 11.1492 12.4447 10.914 12.4447 10.6639C12.4447 10.4136 12.3495 10.1784 12.1765 10.0016L11.1245 8.92511ZM10.6714 11.5083C10.5338 11.649 10.1107 11.6984 9.3711 11.3741C8.59009 11.0317 7.71839 10.3912 6.91663 9.57093C6.11487 8.75063 5.48902 7.8589 5.1543 7.05983C4.83728 6.30311 4.8855 5.8701 5.02307 5.72935L5.84851 4.88482L6.86804 5.92805L6.3794 6.42812C6.15845 6.65418 6.10511 6.99701 6.24683 7.28127C6.88928 8.57016 7.89478 9.5989 9.15454 10.2562C9.4325 10.4012 9.76758 10.3468 9.98853 10.1206L10.4772 9.62064L11.4968 10.6639L10.6714 11.5083Z" />
+        </symbol>
+        <symbol id="icon-heart" viewBox="-2 -2 40 37" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M18 33C17.4875 33 16.9934 32.8087 16.6083 32.4612C15.154 31.1509 13.7519 29.9197 12.5148 28.8335L12.5085 28.8279C8.88162 25.6434 5.74969 22.8933 3.57056 20.1842C1.13461 17.1557 0 14.2842 0 11.1472C0 8.09945 1.01431 5.28766 2.8559 3.22948C4.71945 1.14696 7.27652 0 10.0569 0C12.1349 0 14.0381 0.676911 15.7132 2.01177C16.5586 2.68557 17.3249 3.5102 18 4.47209C18.6754 3.5102 19.4414 2.68557 20.2871 2.01177C21.9622 0.676911 23.8653 0 25.9434 0C28.7235 0 31.2808 1.14696 33.1444 3.22948C34.986 5.28766 36 8.09945 36 11.1472C36 14.2842 34.8657 17.1557 32.4297 20.184C30.2507 22.8932 27.1192 25.6429 23.4931 28.8269L23.4926 28.8273C22.2534 29.9151 20.849 31.1484 19.3914 32.4618C19.0066 32.8087 18.5122 33 18 33Z" />
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M14.8163 13.9347L11.2102 10.3286C12.1041 9.23878 12.6429 7.84286 12.6429 6.32143C12.6429 2.83163 9.81122 0 6.32143 0C2.82857 0 0 2.83163 0 6.32143C0 9.81122 2.82857 12.6429 6.32143 12.6429C7.84286 12.6429 9.23571 12.1071 10.3255 11.2133L13.9316 14.8163C14.1765 15.0612 14.5714 15.0612 14.8163 14.8163C15.0612 14.5745 15.0612 14.1765 14.8163 13.9347ZM6.32143 11.3847C3.52653 11.3847 1.2551 9.11327 1.2551 6.32143C1.2551 3.52959 3.52653 1.2551 6.32143 1.2551C9.11327 1.2551 11.3878 3.52959 11.3878 6.32143C11.3878 9.11327 9.11327 11.3847 6.32143 11.3847Z" />
+        </symbol>
+        <symbol id="icon-ig" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.5034 0H6.49657C2.9143 0 0 2.9143 0 6.49657V17.5036C0 21.0857 2.9143 24 6.49657 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49657C24 2.9143 21.0857 0 17.5034 0V0ZM22.593 17.5036C22.593 20.3098 20.3098 22.593 17.5034 22.593H6.49657C3.69012 22.593 1.40698 20.3098 1.40698 17.5036V6.49657C1.40698 3.69012 3.69012 1.40698 6.49657 1.40698H17.5036C20.3098 1.40698 22.593 3.69012 22.593 6.49657V17.5036Z" />
+            <path
+                d="M12 5.43774C8.38146 5.43774 5.43768 8.38152 5.43768 12C5.43768 15.6186 8.38146 18.5624 12 18.5624C15.6185 18.5624 18.5623 15.6186 18.5623 12C18.5623 8.38152 15.6185 5.43774 12 5.43774ZM12 17.1554C9.15746 17.1554 6.84466 14.8428 6.84466 12C6.84466 9.15752 9.15746 6.84472 12 6.84472C14.8427 6.84472 17.1553 9.15752 17.1553 12C17.1553 14.8428 14.8427 17.1554 12 17.1554Z" />
+            <path
+                d="M18.7192 3.10718C17.6499 3.10718 16.7802 3.97711 16.7802 5.04626C16.7802 6.1156 17.6499 6.98553 18.7192 6.98553C19.7886 6.98553 20.6585 6.1156 20.6585 5.04626C20.6585 3.97693 19.7886 3.10718 18.7192 3.10718ZM18.7192 5.57836C18.4259 5.57836 18.1871 5.3396 18.1871 5.04626C18.1871 4.75274 18.4259 4.51416 18.7192 4.51416C19.0128 4.51416 19.2515 4.75274 19.2515 5.04626C19.2515 5.3396 19.0128 5.57836 18.7192 5.57836Z" />
+        </symbol>
+        <symbol id="icon-fb" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M3.51562 24H11.3438V15.4688H8.53125V12.6562H11.3438V9.14062C11.3438 7.20209 12.9208 5.625 14.8594 5.625H18.375V8.4375H15.5625C14.787 8.4375 14.1562 9.0683 14.1562 9.84375V12.6562H18.2481L17.7794 15.4688H14.1562V24H20.4844C22.4229 24 24 22.4229 24 20.4844V3.51562C24 1.57709 22.4229 0 20.4844 0H3.51562C1.57709 0 0 1.57709 0 3.51562V20.4844C0 22.4229 1.57709 24 3.51562 24ZM1.40625 3.51562C1.40625 2.35254 2.35254 1.40625 3.51562 1.40625H20.4844C21.6475 1.40625 22.5938 2.35254 22.5938 3.51562V20.4844C22.5938 21.6475 21.6475 22.5938 20.4844 22.5938H15.5625V16.875H18.9706L19.9081 11.25H15.5625V9.84375H19.7812V4.21875H14.8594C12.1454 4.21875 9.9375 6.42664 9.9375 9.14062V11.25H7.125V16.875H9.9375V22.5938H3.51562C2.35254 22.5938 1.40625 21.6475 1.40625 20.4844V3.51562Z" />
+        </symbol>
+        <symbol id="icon-vk" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12.145 15.5C15.617 15.5 14.379 13.302 14.647 12.67C14.643 12.198 14.639 11.744 14.655 11.468C14.875 11.53 15.394 11.793 16.466 12.835C18.121 14.505 18.544 15.5 19.881 15.5H22.342C23.122 15.5 23.528 15.177 23.731 14.906C23.927 14.644 24.119 14.184 23.909 13.468C23.36 11.744 20.158 8.767 19.959 8.453C19.989 8.395 20.037 8.318 20.062 8.278H20.06C20.692 7.443 23.104 3.829 23.459 2.383C23.46 2.381 23.461 2.378 23.461 2.375C23.653 1.715 23.477 1.287 23.295 1.045C23.021 0.683 22.585 0.5 21.996 0.5H19.535C18.711 0.5 18.086 0.915 17.77 1.672C17.241 3.017 15.755 5.783 14.641 6.762C14.607 5.375 14.63 4.316 14.648 3.529C14.684 1.994 14.8 0.5 13.207 0.5H9.339C8.341 0.5 7.386 1.59 8.42 2.884C9.324 4.018 8.745 4.65 8.94 7.796C8.18 6.981 6.828 4.78 5.872 1.967C5.604 1.206 5.198 0.501 4.055 0.501H1.594C0.596 0.501 0 1.045 0 1.956C0 4.002 4.529 15.5 12.145 15.5ZM4.055 2.001C4.272 2.001 4.294 2.001 4.455 2.458C5.434 5.341 7.63 9.607 9.234 9.607C10.439 9.607 10.439 8.372 10.439 7.907L10.438 4.205C10.372 2.98 9.926 2.37 9.633 2L13.141 2.004C13.143 2.021 13.121 6.099 13.151 7.087C13.151 8.49 14.265 9.294 16.004 7.534C17.839 5.463 19.108 2.367 19.159 2.241C19.234 2.061 19.299 2 19.535 2H21.996H22.006C22.005 2.003 22.005 2.006 22.004 2.009C21.779 3.059 19.558 6.405 18.815 7.444C18.803 7.46 18.792 7.477 18.781 7.494C18.454 8.028 18.188 8.618 18.826 9.448H18.827C18.885 9.518 19.036 9.682 19.256 9.91C19.94 10.616 22.286 13.03 22.494 13.99C22.356 14.012 22.206 13.996 19.881 14.001C19.386 14.001 18.999 13.261 17.522 11.771C16.194 10.479 15.332 9.951 14.547 9.951C13.023 9.951 13.134 11.188 13.148 12.684C13.153 14.306 13.143 13.793 13.154 13.895C13.065 13.93 12.81 14 12.145 14C5.8 14 1.668 3.929 1.509 2.004C1.564 1.999 2.321 2.002 4.055 2.001Z" />
+        </symbol>
+        <symbol id="icon-yt" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M15.6941 8.92138L10.3919 6.02027C10.087 5.85346 9.72668 5.85968 9.42785 6.03675C9.12884 6.21399 8.9505 6.5271 8.9505 6.87463V12.6271C8.9505 12.9729 9.12775 13.2855 9.42474 13.4629C9.57983 13.5556 9.75177 13.6021 9.92407 13.6021C10.0819 13.6021 10.2401 13.5631 10.3857 13.4847L15.688 10.6336C16.0028 10.4642 16.1992 10.137 16.2007 9.77941C16.202 9.4218 16.0079 9.09313 15.6941 8.92138ZM10.3569 11.9034V7.60412L14.3197 9.77245L10.3569 11.9034Z" />
+            <path
+                d="M23.8234 5.19658L23.8223 5.18559C23.802 4.99242 23.5996 3.27416 22.7643 2.4002C21.7988 1.37225 20.7042 1.24737 20.1778 1.1875C20.1342 1.18256 20.0943 1.17798 20.0586 1.17322L20.0166 1.16882C16.8438 0.93811 12.0521 0.906616 12.0042 0.906433L12 0.90625L11.9957 0.906433C11.9478 0.906616 7.1561 0.93811 3.9547 1.16882L3.9124 1.17322C3.87834 1.17779 3.84081 1.18201 3.79997 1.18677C3.27959 1.24682 2.19671 1.37189 1.22845 2.43701C0.43286 3.30163 0.20288 4.98308 0.17926 5.17204L0.176513 5.19658C0.169372 5.27696 0 7.19059 0 9.11172V10.9076C0 12.8287 0.169372 14.7424 0.176513 14.8229L0.177795 14.835C0.198119 15.0251 0.400267 16.7119 1.23175 17.5862C2.13958 18.5797 3.28746 18.7112 3.90489 18.7819C4.00249 18.793 4.08653 18.8025 4.14384 18.8126L4.19932 18.8203C6.03129 18.9946 11.7751 19.0805 12.0186 19.084L12.026 19.0842L12.0333 19.084C12.0813 19.0838 16.8727 19.0523 20.0456 18.8216L20.0875 18.8172C20.1276 18.8119 20.1726 18.8071 20.2221 18.802C20.7395 18.7471 21.8166 18.633 22.7715 17.5823C23.567 16.7175 23.7972 15.0361 23.8206 14.8473L23.8234 14.8228C23.8305 14.7422 24.0001 12.8287 24.0001 10.9076V9.11172C23.9999 7.19059 23.8305 5.27714 23.8234 5.19658ZM22.5935 10.9076C22.5935 12.6857 22.4382 14.517 22.4236 14.6851C22.3639 15.1481 22.1213 16.212 21.7336 16.6333C21.136 17.2908 20.522 17.356 20.0738 17.4034C20.0196 17.4091 19.9694 17.4146 19.924 17.4203C16.8552 17.6422 12.2444 17.6763 12.032 17.6775C11.7938 17.6741 6.13401 17.5875 4.35789 17.4225C4.26689 17.4076 4.16856 17.3963 4.06493 17.3846C3.53923 17.3243 2.81963 17.2419 2.26629 16.6333L2.25329 16.6194C1.87243 16.2226 1.63677 15.2278 1.5769 14.6906C1.56573 14.5635 1.40643 12.7106 1.40643 10.9076V9.11172C1.40643 7.33561 1.56133 5.50639 1.57635 5.33482C1.64758 4.78935 1.89477 3.78997 2.26629 3.38604C2.88225 2.70855 3.53172 2.63348 3.96129 2.58386C4.0023 2.5791 4.04057 2.5747 4.07591 2.57012C7.18942 2.3471 11.8333 2.31396 12 2.31268C12.1666 2.31378 16.8088 2.3471 19.8947 2.57012C19.9326 2.57488 19.974 2.57964 20.0185 2.58477C20.4603 2.63513 21.1281 2.7113 21.7409 3.36498L21.7466 3.37102C22.1275 3.76781 22.3631 4.78001 22.423 5.32805C22.4336 5.44798 22.5935 7.30485 22.5935 9.11172V10.9076Z" />
+        </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 34 23" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 2L32 11.5M32 11.5L22.5 21M32 11.5H2" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L11.5 11.5L2 21" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21L2.5 11.5L12 2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2H32" stroke-width="4" stroke-linecap="round" />
+            <path d="M2 10H32" stroke-width="4" stroke-linecap="round" />
+            <path d="M2 18H32" stroke-width="4" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 25L24.2132 3.7868" stroke-width="4" stroke-linecap="round" />
+            <path d="M3 4L24.2132 25.2132" stroke-width="4" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-sort" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M6.30719 0.218099C6.01466 -0.0726996 5.54228 -0.0726996 5.24974 0.218099L0 5.46784L1.05745 6.53279L5.02475 2.55798V23.9994H6.52468V2.55798L10.492 6.52529L11.5569 5.46784L6.30719 0.218099Z" />
+            <path
+                d="M20.9916 17.4671L17.0243 21.4419V0.000488281H15.5243V21.4419L11.557 17.4746L10.4996 18.5321L15.7493 23.7818C16.0418 24.0726 16.5142 24.0726 16.8068 23.7818L22.0565 18.5321L20.9916 17.4671Z" />
+        </symbol>
+        <svg id="icon-filter" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M22.7099 1.80714e-06H1.31268C0.935287 -0.000712047 0.589308 0.210112 0.416794 0.54586C0.241901 0.886128 0.272596 1.29588 0.496031 1.60664L8.33506 12.6494C8.33768 12.6532 8.34054 12.6568 8.34315 12.6606C8.62798 13.0451 8.78193 13.5108 8.78289 13.9896V22.9927C8.78122 23.2594 8.88592 23.5154 9.0739 23.7046C9.26188 23.8938 9.51744 23.9999 9.78394 23.9999C9.91957 23.9999 10.0535 23.9728 10.1787 23.9209L14.5836 22.2412C14.9784 22.1208 15.2404 21.7484 15.2404 21.2999V13.9896C15.2411 13.5111 15.3953 13.0451 15.6799 12.6606C15.6825 12.6568 15.6853 12.6532 15.688 12.6494L23.5268 1.60617C23.7502 1.29564 23.7809 0.886128 23.606 0.54586C23.4335 0.210112 23.0875 -0.000712047 22.7099 1.80714e-06ZM14.6976 11.9389C14.2598 12.5331 14.023 13.2514 14.0216 13.9896V21.1519L10.0012 22.6847V13.9896C9.99976 13.2514 9.763 12.5331 9.32494 11.9389L1.71457 1.21831H22.3082L14.6976 11.9389Z" />
+        </svg>
+    </svg>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__mobile-top">
+                        <div class="header__menu-close-btn">
+                            <a class="header__menu-close-btn-link" href="#">
+                                <svg class="header__menu-close-btn-icon">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__mobile-logo">
+                            <img class="header__mobile-logo-img" src="./images/logo-footer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="header__city">
+                        <svg class="header__city-icon">
+                            <use xlink:href="#icon-city-pin"></use>
+                        </svg>
+                        <div class="header__city-text">Нур-Султан</div>
+                    </div>
+                    <div class="header__site-menu">
+                        <ul class="site-menu">
+                            <li class="site-menu__item">
+                                <a class="site-menu__link" href="#">Оплата</a>
+                            </li>
+                            <li class="site-menu__item">
+                                <a class="site-menu__link" href="#">Доставка</a>
+                            </li>
+                            <li class="site-menu__item">
+                                <a class="site-menu__link" href="#">Советы</a>
+                            </li>
+                            <li class="site-menu__item">
+                                <a class="site-menu__link" href="#">Оптовикам</a>
+                            </li>
+                            <li class="site-menu__item">
+                                <a class="site-menu__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__phones">
+                        <a class="header__phone" href="tel:+77774735137">
+                            <svg class="header__phone-icon">
+                                <use xlink:href="#icon-phone-2"></use>
+                            </svg>
+                            <div class="header__phone-text">+7 777 473 51 37</div>
+                        </a>
+                        <a class="header__callback" href="#">
+                            <svg class="header__callback-icon">
+                                <use xlink:href="#icon-phone-1"></use>
+                            </svg>
+                            <div class="header__callback-text">Заказать звонок</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__bottom">
+                <div class="header__menu-btn">
+                    <a class="header__menu-btn-link" href="#">
+                        <svg class="header__menu-btn-icon">
+                            <use xlink:href="#icon-menu"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="header__logo logo">
+                    <a class="logo__link" href="#">
+                        <picture>
+                            <source srcset="./images/logo.png" media="(min-width: 993px)">
+                            <img class="logo__img" src="./images/logo-m.png" alt="Лого">
+                        </picture>
+                    </a>
+                </div>
+                <div class="header__bottom-inner">
+                    <div class="header__box">
+                        <div class="header__search search">
+                            <form class="search__form">
+                                <button class="search__button" type="submit">
+                                    <svg class="search__icon">
+                                        <use xlink:href="#icon-search"></use>
+                                    </svg>
+                                </button>
+                                <input class="search__input" type="text" placeholder="Поиск товаров">
+                            </form>
+                        </div>
+                        <div class="header__catalog-menu" data-da=".header__top-inner,992,2">
+                            <ul class="catalog-menu">
+                                <li class="catalog-menu__item">
+                                    <a class="catalog-menu__link" href="#">Искусственные елки</a>
+                                </li>
+                                <li class="catalog-menu__item">
+                                    <a class="catalog-menu__link" href="#">Ёлочные шары</a>
+                                </li>
+                                <li class="catalog-menu__item">
+                                    <a class="catalog-menu__link" href="#">Новогодний декор</a>
+                                </li>
+                                <li class="catalog-menu__item">
+                                    <a class="catalog-menu__link" href="#">Световые гирлянды</a>
+                                </li>
+                                <li class="catalog-menu__item">
+                                    <a class="catalog-menu__link" href="#">Услуги</a>
+                                </li>
+                                <li class="catalog-menu__item catalog-menu__item--accent">
+                                    <a class="catalog-menu__link" href="#">%&nbsp;Скидки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="header__favorites" href="#">
+                        <svg class="header__favirutes-icon">
+                            <use xlink:href="#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <div class="header__basket">
+                        <a class="basket" href="#">
+                            <svg class="basket__icon">
+                                <use xlink:href="#icon-basket"></use>
+                            </svg>
+                            <div class="basket__content">
+                                <p class="basket__title"><span class="basket__title-text">Корзина (</span><span
+                                        class="basket__count">0</span><span class="basket__title-text">)</span></p>
+                                <p class="basket__text">Ваша корзина пуста</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span>Искусственные елки</span>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="catalog">
+                <div class="catalog__top-line">
+                    <h1 class="catalog__title title">Искусственные елки</h1>
+                    <div class="catalog__mob-btns">
+                        <a class="catalog__mob-btn catalog__mob-btn-sort" href="#">
+                            <svg class="catalog__icon-sort">
+                                <use xlink:href="#icon-sort"></use>
+                            </svg>
+                        </a>
+                        <a class="catalog__mob-btn catalog__mob-btn-filter" href="#">
+                            <svg class="catalog__icon-filter">
+                                <use xlink:href="#icon-filter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__inner">
+                    <div class="catalog__filter">
+                        <div class="filter">
+                            <div class="filter__title">Фильтр</div>
+                            <div class="filter__item">
+                                <div class="filter__item-title">Высота, см</div>
+                                <div class="filter__range">
+                                    <div class="filter__range-controls">
+                                        <label class="filter__range-label">
+                                            <span>от</span>
+                                            <input class="filter__range-input js-input-from" type="text" value="0" />
+                                        </label>
+                                        <label class="filter__range-label">
+                                            <span>до</span>
+                                            <input class="filter__range-input js-input-to" type="text" value="0" />
+                                        </label>
+                                    </div>
+                                    <div class="filter__range-slider">
+                                        <input type="text" class="js-range-slider" value="" data-min="30" data-max="300"
+                                            data-from="30" data-to="300" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-title">Цвет хвои</div>
+                                <div class="filter__check">
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>зеленый</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>белый</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>голубой</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>заснеженный</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-title">Цена, тг</div>
+                                <div class="filter__range">
+                                    <div class="filter__range-controls">
+                                        <label class="filter__range-label">
+                                            <span>от</span>
+                                            <input class="filter__range-input js-input-from" type="text" value="0" />
+                                        </label>
+                                        <label class="filter__range-label">
+                                            <span>до</span>
+                                            <input class="filter__range-input js-input-to" type="text" value="0" />
+                                        </label>
+                                    </div>
+                                    <div class="filter__range-slider">
+                                        <input type="text" class="js-range-slider" value="" data-min="5500"
+                                            data-max="720000" data-from="5500" data-to="720000" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-title">Материал</div>
+                                <div class="filter__check">
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>литая</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>литая + ПВХ</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>ПВХ</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-title">Крепление веток</div>
+                                <div class="filter__check">
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>отгибные</span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__check-item">
+                                        <label class="filter__check-label">
+                                            <input class="filter__checkbox" type="checkbox">
+                                            <span>на шарнирах</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__content">
+                        <div class="catalog__sort">
+                            <div class="catalog__sort-title">Сортировать:</div>
+                            <button
+                                class="catalog__sort-item catalog__sort-item--active catalog__sort-item--ASC catalog__sort-price">по
+                                цене</button>
+                            <button class="catalog__sort-item catalog__sort-popular">по популярности</button>
+                        </div>
+                        <div class="catalog__grid">
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/test-2.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/test-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-3.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-4.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-5.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-6.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-3.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-2.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-6.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-4.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-5.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-2.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-3.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-3.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-2.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-5.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-4.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-6.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-6.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-4.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-5.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/test-1.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/test-2.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-3.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-3.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-2.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-2.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-3.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__grid-item">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <div class="card__view-wrap card__swiper swiper-container">
+                                            <a class="card__view-link swiper-wrapper" href="#">
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img" src="./images/content/card/item-3.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-1.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                                <div class="card__image swiper-slide">
+                                                    <img class="card__img swiper-lazy"
+                                                        data-src="./images/content/card/item-2.jpg" alt="">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </a>
+                                            <div class="card__buttons-nav">
+                                                <div class="card__btn-nav card__btn-nav-prev">
+                                                    <svg class="card__icon-chevron card__icon-chevron-left">
+                                                        <use xlink:href="#icon-chevron-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card__btn-nav card__btn-nav-next">
+                                                    <svg class="card__icon-chevron card__icon-chevron-right">
+                                                        <use xlink:href="#icon-chevron-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <a class="card__title-link" href="#">Искусственная Ёлка Верона</a>
+                                        </div>
+                                        <div class="card__info-wrap">
+                                            <div class="card__info-box">
+                                                <div class="card__price-box">
+                                                    <div class="card__price-title">Цена</div>
+                                                    <div class="card__price">59 999 тг.</div>
+                                                    <div class="card__price-old">180 000 тг</div>
+                                                </div>
+                                                <div class="card__modification modification">
+                                                    <form class="modification__form">
+                                                        <label class="modification__select-container">
+                                                            <span class="modification__select-label">Высота</span>
+                                                            <select class="modification__select-control">
+                                                                <option value="1.8">1.8 м</option>
+                                                                <option value="2.5">2.5 м</option>
+                                                                <option value="3">3 м</option>
+                                                            </select>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card__info-favorite">
+                                                <a class="card__favorite" href="#">
+                                                    <svg class="card__icon-favorite">
+                                                        <use xlink:href="#icon-heart"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__buttons-footer">
+                                            <a class="card__btn card__btn--addbasket btn btn--light" href="#">В
+                                                корзину</a>
+                                            <a class="card__btn card__btn--oneclick btn btn--accent" href="#">Купить в 1
+                                                клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="card__stiker">
+                                        <div class="card__stiker-item">
+                                            -40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__pagination pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item pagination__item--active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="pagination__item pagination__item--dots">
+                                    <span>...</span>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#">7</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#">8</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#">9</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-seo">
+                <h1 class="title">SEO текст</h1>
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent
+                    delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant
+                    dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam
+                    eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu.
+                    Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit
+                    aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet et delectus
+                    accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit
+                    dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut.
+                    Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis.
+                    Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation
+                    efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. No deserunt
+                    mediocritatem mel. Lorem ipsum dolor sit amet et delectus
+                </p>
+                <h2 class="title">SEO текст 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent
+                    delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant
+                    dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam
+                    eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu.
+                    Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit
+                    aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet et delectus
+                    accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit
+                    dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut.
+                    Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis.
+                    Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation
+                    efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. No deserunt
+                    mediocritatem mel. Lorem ipsum dolor sit amet et delectus
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item footer__item-top">
+                    <div class="footer__logo">
+                        <img class="footer__logo-img" src="./images/logo-footer.png" alt="">
+                    </div>
+                    <a class="footer__devs" href="#" data-da=".footer__item-bottom,650,first">
+                        <div class="footer__devs-title">Сайт разработан</div>
+                        <img class="footer__devs-img" src="./images/logo-devs.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__item footer__item-dropdown">
+                    <div class="footer__title">Каталог</div>
+                    <ul class="footer__menu footer__dropdown">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Искусственные елки</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Высотные елки</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Елочные шары</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Новогодний декор</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Световые гирлянды</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item-dropdown">
+                    <div class="footer__title">О компании</div>
+                    <ul class="footer__menu footer__dropdown">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Услуги</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Оптовикам</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item-dropdown">
+                    <div class="footer__title">Информация</div>
+                    <ul class="footer__menu footer__dropdown">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Обмен и возврат</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item-dropdown footer__item-contact">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__dropdown">
+                        <a class="footer__phone" href="tel:+77774735137">+7 777 473 5137</a>
+                        <div class="footer__text">С 9.00 до 22.00 без выходных и праздников</div>
+                        <a class="footer__callback" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="footer__item footer__item-bottom">
+                    <div class="footer__item-box">
+                        <div class="footer__title">Мы в соцсетях</div>
+                        <div class="footer__social social">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon social__icon--ig">
+                                    <use xlink:href="#icon-ig"></use>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon social__icon--yt">
+                                    <use xlink:href="#icon-yt"></use>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon social__icon--fb">
+                                    <use xlink:href="#icon-fb"></use>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon social__icon--vk">
+                                    <use xlink:href="#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
