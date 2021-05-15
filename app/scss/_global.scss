@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    color: $color-default-primary;
+    font-family: $font-primary;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1600px + $gap;
+    margin: 0 auto;
+    padding: 0 ($gap / 2);
+    @media (max-width: $breakpoints-gap-md){
+        padding: 0 ($gap-md / 2);
+    }
+    @media (max-width: $breakpoints-gap-sm){
+        padding: 0 ($gap-sm / 2);
+    }
+}
+
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.cursor-grabbing{
+    cursor: grabbing;
+}
+
+.color {
+    &--default-primary {
+        color: $color-default-primary;
+    }
+    &--default-secondary {
+        color: $color-default-secondary;
+    }
+    &--default-light {
+        color: $color-default-light;
+    }
+    &--accent-primary {
+        color: $color-accent-primary;
+    }
+    &--accent-secondary {
+        color: $color-accent-secondary;
+    }
+}

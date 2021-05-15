@@ -1,0 +1,24 @@
+$font-primary: "Montserrat", sans-serif;
+// $font-secondary: 'Barlow', sans-serif;
+
+$color-default-primary: #333333;
+$color-default-secondary: #c4c4c4;
+$color-default-light: #ffffff;
+$color-accent-primary: #588a3d;
+$color-accent-secondary: #dc0000;
+
+@function color-svg($color) {
+    @return "%23" + str-slice("#{$color}", 2, -1);
+}
+
+// background-image: url('data:image/svg+xml,fill="#{color-svg($color-accent-primary)}"');
+
+$hover-box-shadow-primary: 0px 4px 8px rgba(0, 0, 0, 0.25);
+$hover-box-shadow-accent: 0px 0px 8px rgba(88, 138, 61, 0.64);
+
+$gap: 32px;
+$gap-md: 24px;
+$gap-sm: 16px;
+
+$breakpoints-gap-md: 1400px;
+$breakpoints-gap-sm: 768px;
